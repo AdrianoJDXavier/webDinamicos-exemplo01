@@ -14,7 +14,7 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ImprimeRequestServlet</servlet-name>
-        <url-pattern>/Imprime</url-pattern>
+        <url-pattern>/imprime</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
