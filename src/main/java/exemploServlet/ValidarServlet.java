@@ -21,6 +21,10 @@ public class ValidarServlet extends HttpServlet {
             throws ServletException, IOException {
         String password = request.getParameter("password");
         String confirmation = request.getParameter("confirmation");
+        
+        if(password.equals(confirmation) && password.){
+            
+        }
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             out.println("<!DOCTYPE html>");

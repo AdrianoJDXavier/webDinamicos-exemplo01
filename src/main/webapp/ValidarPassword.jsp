@@ -7,11 +7,12 @@
     </head>
     <body>
         <h1>Confirmar Password</h1>
-        <form action="/validator" method="POST">
+        <form action="validator" method="POST">
             <label>Senha:</label>
             <input type="password" name="password" value="" />
             <label>Confirmação:</label>
             <input type="password" name="confirmation" value="" />
+            <input type="submit" value="Enviar" />
         </form>
     </body>
 </html>
