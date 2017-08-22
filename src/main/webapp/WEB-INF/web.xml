@@ -8,6 +8,10 @@
         <servlet-name>ImprimeRequestServlet</servlet-name>
         <servlet-class>exemploServlet.ImprimeRequestServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>TextServlet</servlet-name>
+        <servlet-class>exemploServlet.TextServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Contador</servlet-name>
         <url-pattern>/contador</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>ImprimeRequestServlet</servlet-name>
         <url-pattern>/imprime</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TextServlet</servlet-name>
+        <url-pattern>/textServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
