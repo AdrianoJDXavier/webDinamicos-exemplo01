@@ -12,6 +12,10 @@
         <servlet-name>TextServlet</servlet-name>
         <servlet-class>exemploServlet.TextServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ValidarServlet</servlet-name>
+        <servlet-class>exemploServlet.ValidarServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Contador</servlet-name>
         <url-pattern>/contador</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>TextServlet</servlet-name>
         <url-pattern>/textServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ValidarServlet</servlet-name>
+        <url-pattern>/validator</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
