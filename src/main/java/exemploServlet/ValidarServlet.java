@@ -22,9 +22,6 @@ public class ValidarServlet extends HttpServlet {
         String password = request.getParameter("password");
         String confirmation = request.getParameter("confirmation");
         
-        if(password.equals(confirmation) && password.){
-            
-        }
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             out.println("<!DOCTYPE html>");
@@ -33,8 +30,14 @@ public class ValidarServlet extends HttpServlet {
             out.println("<title>Servlet ValidarServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet ValidarServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Validar Password</h1>");
             out.println("</body>");
+            
+        if(password.equals(confirmation) && password.length() >= 8){
+            out.println("<p>Password Confirmado!"+request.getReader()+"</p>");
+            out.println("</html>");
+        }else
+            out.println("<p>Password Incorreto!</p>");
             out.println("</html>");
         }
     }
