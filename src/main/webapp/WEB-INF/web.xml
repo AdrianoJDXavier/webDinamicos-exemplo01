@@ -16,6 +16,10 @@
         <servlet-name>ValidarServlet</servlet-name>
         <servlet-class>exemploServlet.ValidarServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ListServlet</servlet-name>
+        <servlet-class>exemploServlet.ListServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Contador</servlet-name>
         <url-pattern>/contador</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>ValidarServlet</servlet-name>
         <url-pattern>/validator</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListServlet</servlet-name>
+        <url-pattern>/list</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

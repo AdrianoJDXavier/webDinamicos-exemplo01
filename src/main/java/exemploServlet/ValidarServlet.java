@@ -34,7 +34,7 @@ public class ValidarServlet extends HttpServlet {
             out.println("</body>");
             
         if(password.equals(confirmation) && password.length() >= 8){
-            out.println("<p>Password Confirmado!"+request.getReader()+"</p>");
+            out.println("<p>Password Confirmado!</p>");
             out.println("</html>");
         }else
             out.println("<p>Password Incorreto!</p>");

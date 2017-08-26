@@ -9,9 +9,9 @@
         <h1>Confirmar Password</h1>
         <form action="validator" method="POST">
             <label>Senha:</label>
-            <input type="password" name="password" value="" />
+            <input type="password" name="password" />
             <label>Confirmação:</label>
-            <input type="password" name="confirmation" value="" />
+            <input type="password" name="confirmation" />
             <input type="submit" value="Enviar" />
         </form>
     </body>
