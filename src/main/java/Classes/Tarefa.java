@@ -1,4 +1,4 @@
-package exemploServlet;
+package Classes;
 
 
 public class Tarefa {
