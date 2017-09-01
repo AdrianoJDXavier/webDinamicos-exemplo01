@@ -40,12 +40,10 @@ public class ListServlet extends HttpServlet {
             out.println("<li>Exemplo de tarefa</li>");
             out.println("<li>Tarefa 3</li>");
             out.println("<li>Outra tarefa</li>");
-            if (valor == true) {
-                for (int i = 0; i < tarefas.size(); i++) {
+            for (int i = 0; i < tarefas.size(); i++) {
+                if (valor == true) {
                     out.println("<strong><li>" + tarefas.get(i).getDescrição() + "</li></strong>");
-                }
-            } else {
-                for (int i = 0; i < tarefas.size(); i++) {
+                } else {
                     out.println("<li>" + tarefas.get(i).getDescrição() + "</li>");
                 }
             }
